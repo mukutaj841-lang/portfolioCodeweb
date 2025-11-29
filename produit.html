@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - mukuta Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html" class="logo-link">mukuta</a>
+                    <span class="email">mukutaj841@gmail.com</span>
+                    <button class="btn-copy" id="copyEmail">Copy</button>
+                </div>
+                <nav class="header-right">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <span class="nav-separator">/</span>
+                    <a href="#" class="nav-link">LinkedIn</a>
+                    <span class="nav-separator">/</span>
+                    <a href="#" class="nav-link">Dribbble</a>
+                    <span class="nav-separator">/</span>
+                    <a href="#" class="nav-link">Instagram</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero section-fade">
+        <div class="container">
+            <div class="projects-hero-content">
+                <span class="section-tag">Portfolio</span>
+                <h1 class="projects-hero-title">Discover My Work</h1>
+                <p class="projects-hero-description">
+                    Explorez ma collection de logos, maquettes et sites web. 
+                    Chaque projet est une histoire d'innovation et de créativité.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="logo">Logos</button>
+                <button class="filter-btn" data-filter="maquette">Maquettes</button>
+                <button class="filter-btn" data-filter="website">Sites Web</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid-section section-fade">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project Card 1 - Logo -->
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="10" y="20" width="60" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 40L40 50L50 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                            <span>Logo Design</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Identité Visuelle</h3>
+                        <p class="project-description">Création d'une identité de marque moderne et distinctive</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 - Website -->
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="15" y="15" width="50" height="35" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 25H60M20 35H45M20 45H55" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Web Design</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Site Web Moderne</h3>
+                        <p class="project-description">Design responsive et performance optimisée</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 - Maquette -->
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="12" y="18" width="28" height="44" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <rect x="40" y="18" width="28" height="44" rx="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Maquette</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Interface Design</h3>
+                        <p class="project-description">Maquettes haute fidélité pour application mobile</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 - Branding -->
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="25" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 40L37 47L50 33" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                            <span>Branding</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Identité Complète</h3>
+                        <p class="project-description">Branding complet avec charte graphique</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 - Logo -->
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <polygon points="40,15 55,55 25,55" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="40" cy="40" r="8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Logo Design</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Logo Minimaliste</h3>
+                        <p class="project-description">Design épuré et intemporel</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 - Website -->
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="20" y="20" width="40" height="40" rx="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M25 30H55M25 40H45M25 50H50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Web Design</span>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">E-commerce</h3>
+                        <p class="project-description">Plateforme e-commerce sur mesure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home Section -->
+    <section class="back-home-section section-fade">
+        <div class="container">
+            <div class="back-home-content">
+                <a href="index.html" class="back-home-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="copyright">© 2024 All rights reserved.</p>
+                </div>
+                <nav class="footer-right">
+                    <a href="#" class="nav-link">LinkedIn</a>
+                    <span class="nav-separator">/</span>
+                    <a href="#" class="nav-link">Dribbble</a>
+                    <span class="nav-separator">/</span>
+                    <a href="#" class="nav-link">Instagram</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
+

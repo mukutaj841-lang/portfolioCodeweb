@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     
     const copyButton = document.getElementById('copyEmail');
-    const emailText = 'karanidesign@gmail.com';
+    const emailText = 'mukutaj841@gmail.com';
     
     if (copyButton) {
         copyButton.addEventListener('click', function() {
@@ -201,5 +201,49 @@ window.addEventListener('load', function() {
             shape.style.opacity = '0.15';
         }, index * 200);
     });
+
+    // ============================================
+    // PROJECT FILTERING (for produit.html)
+    // ============================================
+    
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    if (filterButtons.length > 0 && projectCards.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    
+                    if (filterValue === 'all' || cardCategory === filterValue) {
+                        card.style.display = 'flex';
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        
+                        setTimeout(() => {
+                            card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    }
 });
 
