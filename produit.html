@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -39,7 +41,7 @@
                 <span class="section-tag">Portfolio</span>
                 <h1 class="projects-hero-title">Discover My Work</h1>
                 <p class="projects-hero-description">
-                    Explorez ma collection de logos, maquettes et sites web. 
+                    Explorez ma collection de logos, maquettes et sites web.
                     Chaque projet est une histoire d'innovation et de créativité.
                 </p>
             </div>
@@ -60,21 +62,32 @@
     </section>
 
     <!-- Projects Grid -->
-    <section class="projects-grid-section section-fade">
+    <section class="projects-grid-section">
         <div class="container">
             <div class="projects-grid">
-                <!-- Project Card 1 - Logo -->
+                <!-- Logo Designs -->
                 <div class="project-card" data-category="logo">
                     <div class="project-card-image">
-                        <div class="project-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <rect x="10" y="20" width="60" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
-                                <path d="M30 40L40 50L50 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                            </svg>
-                            <span>Logo Design</span>
-                        </div>
+                        <img src="logo.jpg" alt="Logo Design" class="project-image">
                         <div class="project-card-overlay">
-                            <a href="#" class="project-card-link">Voir le projet</a>
+                            <a href="#" class="project-card-link" data-image="logo.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Logo Créatif</h3>
+                        <p class="project-description">Design de logo moderne et mémorable</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <img src="logo1.jpg" alt="Logo Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="logo1.jpg">Voir le projet</a>
                         </div>
                     </div>
                     <div class="project-card-content">
@@ -83,70 +96,254 @@
                             <span class="project-year">2024</span>
                         </div>
                         <h3 class="project-title">Identité Visuelle</h3>
-                        <p class="project-description">Création d'une identité de marque moderne et distinctive</p>
+                        <p class="project-description">Logo élégant et professionnel</p>
                     </div>
                 </div>
 
-                <!-- Project Card 2 - Website -->
-                <div class="project-card" data-category="website">
+                <div class="project-card" data-category="logo">
                     <div class="project-card-image">
-                        <div class="project-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <rect x="15" y="15" width="50" height="35" rx="2" stroke="currentColor" stroke-width="2"/>
-                                <path d="M20 25H60M20 35H45M20 45H55" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                            <span>Web Design</span>
-                        </div>
+                        <img src="logo2.jpg" alt="Logo Design" class="project-image">
                         <div class="project-card-overlay">
-                            <a href="#" class="project-card-link">Voir le projet</a>
+                            <a href="#" class="project-card-link" data-image="logo2.jpg">Voir le projet</a>
                         </div>
                     </div>
                     <div class="project-card-content">
                         <div class="project-card-header">
-                            <span class="project-category">Web Design</span>
+                            <span class="project-category">Logo Design</span>
                             <span class="project-year">2024</span>
                         </div>
-                        <h3 class="project-title">Site Web Moderne</h3>
-                        <p class="project-description">Design responsive et performance optimisée</p>
+                        <h3 class="project-title">Logo Minimaliste</h3>
+                        <p class="project-description">Design épuré et intemporel</p>
                     </div>
                 </div>
 
-                <!-- Project Card 3 - Maquette -->
-                <div class="project-card" data-category="maquette">
+                <div class="project-card" data-category="logo">
                     <div class="project-card-image">
-                        <div class="project-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <rect x="12" y="18" width="28" height="44" rx="3" stroke="currentColor" stroke-width="2"/>
-                                <rect x="40" y="18" width="28" height="44" rx="3" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                            <span>Maquette</span>
-                        </div>
+                        <img src="logo3.jpg" alt="Logo Design" class="project-image">
                         <div class="project-card-overlay">
-                            <a href="#" class="project-card-link">Voir le projet</a>
+                            <a href="#" class="project-card-link" data-image="logo3.jpg">Voir le projet</a>
                         </div>
                     </div>
                     <div class="project-card-content">
                         <div class="project-card-header">
-                            <span class="project-category">Maquette</span>
+                            <span class="project-category">Logo Design</span>
                             <span class="project-year">2024</span>
                         </div>
-                        <h3 class="project-title">Interface Design</h3>
-                        <p class="project-description">Maquettes haute fidélité pour application mobile</p>
+                        <h3 class="project-title">Logo Corporate</h3>
+                        <p class="project-description">Identité de marque distinctive</p>
                     </div>
                 </div>
 
-                <!-- Project Card 4 - Branding -->
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <img src="logo4.jpg" alt="Logo Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="logo4.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Logo Dynamique</h3>
+                        <p class="project-description">Design vibrant et énergique</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <img src="logo5.jpg" alt="Logo Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="logo5.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Logo Artistique</h3>
+                        <p class="project-description">Création unique et originale</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <img src="logo6.jpg" alt="Logo Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="logo6.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Logo Tech</h3>
+                        <p class="project-description">Design moderne et innovant</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <img src="logo9.jpg" alt="Logo Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="logo9.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Logo Premium</h3>
+                        <p class="project-description">Luxe et sophistication</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="logo">
+                    <div class="project-card-image">
+                        <img src="logo12.jpg" alt="Logo Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="logo12.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Logo Moderne</h3>
+                        <p class="project-description">Design contemporain et tendance</p>
+                    </div>
+                </div>
+
+                <!-- Branding / Affiches -->
                 <div class="project-card" data-category="branding">
                     <div class="project-card-image">
-                        <div class="project-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <circle cx="40" cy="40" r="25" stroke="currentColor" stroke-width="2"/>
-                                <path d="M30 40L37 47L50 33" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                            </svg>
-                            <span>Branding</span>
-                        </div>
+                        <img src="affiche.jpg" alt="Affiche Design" class="project-image">
                         <div class="project-card-overlay">
-                            <a href="#" class="project-card-link">Voir le projet</a>
+                            <a href="#" class="project-card-link" data-image="affiche.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Affiche Événementielle</h3>
+                        <p class="project-description">Design d'affiche impactant</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="afiiche1.jpg" alt="Affiche Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="afiiche1.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Affiche Créative</h3>
+                        <p class="project-description">Communication visuelle forte</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="affiche4.jpg" alt="Affiche Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="affiche4.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Affiche Moderne</h3>
+                        <p class="project-description">Design contemporain et élégant</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="affiche5.jpg" alt="Affiche Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="affiche5.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Affiche Artistique</h3>
+                        <p class="project-description">Création visuelle unique</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="affiche7.jpg" alt="Affiche Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="affiche7.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Affiche Promotionnelle</h3>
+                        <p class="project-description">Marketing visuel efficace</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="affiche8.jpg" alt="Affiche Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="affiche8.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Affiche Dynamique</h3>
+                        <p class="project-description">Design vibrant et captivant</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="affiche9.jpg" alt="Affiche Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="affiche9.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Affiche Culturelle</h3>
+                        <p class="project-description">Communication culturelle</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="branding.jpg" alt="Branding Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="branding.jpg">Voir le projet</a>
                         </div>
                     </div>
                     <div class="project-card-content">
@@ -159,42 +356,336 @@
                     </div>
                 </div>
 
-                <!-- Project Card 5 - Logo -->
-                <div class="project-card" data-category="logo">
+                <div class="project-card" data-category="branding">
                     <div class="project-card-image">
-                        <div class="project-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <polygon points="40,15 55,55 25,55" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <circle cx="40" cy="40" r="8" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                            <span>Logo Design</span>
-                        </div>
+                        <img src="branding1.jpg" alt="Branding Design" class="project-image">
                         <div class="project-card-overlay">
-                            <a href="#" class="project-card-link">Voir le projet</a>
+                            <a href="#" class="project-card-link" data-image="branding1.jpg">Voir le projet</a>
                         </div>
                     </div>
                     <div class="project-card-content">
                         <div class="project-card-header">
-                            <span class="project-category">Logo Design</span>
-                            <span class="project-year">2023</span>
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2024</span>
                         </div>
-                        <h3 class="project-title">Logo Minimaliste</h3>
-                        <p class="project-description">Design épuré et intemporel</p>
+                        <h3 class="project-title">Branding Corporate</h3>
+                        <p class="project-description">Identité de marque professionnelle</p>
                     </div>
                 </div>
 
-                <!-- Project Card 6 - Website -->
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="branding4.jpg" alt="Branding Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="branding4.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Branding Créatif</h3>
+                        <p class="project-description">Image de marque unique</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-card-image">
+                        <img src="branding6.jpg" alt="Branding Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="branding6.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Branding</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Branding Premium</h3>
+                        <p class="project-description">Identité haut de gamme</p>
+                    </div>
+                </div>
+
+                <!-- Maquettes / Apps -->
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Interface Mobile</h3>
+                        <p class="project-description">Maquette d'application mobile</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app1.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app1.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">App Design</h3>
+                        <p class="project-description">Interface utilisateur moderne</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app2.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app2.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">UI/UX Design</h3>
+                        <p class="project-description">Expérience utilisateur optimale</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app3.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app3.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">App Moderne</h3>
+                        <p class="project-description">Design d'application contemporain</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app4.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app4.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Interface Élégante</h3>
+                        <p class="project-description">Maquette haute fidélité</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app5.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app5.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">App Interactive</h3>
+                        <p class="project-description">Design interactif et fluide</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app6.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app6.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Mobile UI</h3>
+                        <p class="project-description">Interface mobile intuitive</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app8.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app8.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">App Premium</h3>
+                        <p class="project-description">Design haut de gamme</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app10.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app10.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">App Innovante</h3>
+                        <p class="project-description">Innovation et créativité</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app11.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app11.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">App Créative</h3>
+                        <p class="project-description">Design unique et original</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="maquette">
+                    <div class="project-card-image">
+                        <img src="app13.jpg" alt="App Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="app13.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Maquette</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">App Professionnelle</h3>
+                        <p class="project-description">Interface professionnelle</p>
+                    </div>
+                </div>
+
+                <!-- Sites Web / E-commerce / Moderne -->
                 <div class="project-card" data-category="website">
                     <div class="project-card-image">
-                        <div class="project-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <rect x="20" y="20" width="40" height="40" rx="5" stroke="currentColor" stroke-width="2"/>
-                                <path d="M25 30H55M25 40H45M25 50H50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                            <span>Web Design</span>
-                        </div>
+                        <img src="e-comme.jpg" alt="E-commerce Design" class="project-image">
                         <div class="project-card-overlay">
-                            <a href="#" class="project-card-link">Voir le projet</a>
+                            <a href="#" class="project-card-link" data-image="e-comme.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">E-commerce</h3>
+                        <p class="project-description">Plateforme e-commerce moderne</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="e-comme1.jpg" alt="E-commerce Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="e-comme1.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Boutique en Ligne</h3>
+                        <p class="project-description">Design e-commerce élégant</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="e-comme2.jpg" alt="E-commerce Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="e-comme2.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Shop Design</h3>
+                        <p class="project-description">Interface de vente en ligne</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="e-comme3.jpg" alt="E-commerce Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="e-comme3.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Store Online</h3>
+                        <p class="project-description">Plateforme de vente optimisée</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="e-comme4.jpg" alt="E-commerce Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="e-comme4.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">E-shop Premium</h3>
+                        <p class="project-description">Commerce en ligne haut de gamme</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="e-comme6.jpg" alt="E-commerce Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="e-comme6.jpg">Voir le projet</a>
                         </div>
                     </div>
                     <div class="project-card-content">
@@ -202,13 +693,245 @@
                             <span class="project-category">Web Design</span>
                             <span class="project-year">2023</span>
                         </div>
-                        <h3 class="project-title">E-commerce</h3>
-                        <p class="project-description">Plateforme e-commerce sur mesure</p>
+                        <h3 class="project-title">Marketplace</h3>
+                        <p class="project-description">Plateforme marketplace</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="e-comme7.jpg" alt="E-commerce Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="e-comme7.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">E-commerce Pro</h3>
+                        <p class="project-description">Solution e-commerce professionnelle</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="e-comme10.jpg" alt="E-commerce Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="e-comme10.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Shop Moderne</h3>
+                        <p class="project-description">Boutique en ligne moderne</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Site Web Moderne</h3>
+                        <p class="project-description">Design web contemporain</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne1.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne1.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Website Élégant</h3>
+                        <p class="project-description">Site web élégant et responsive</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne2.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne2.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Site Corporate</h3>
+                        <p class="project-description">Site web d'entreprise</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne3.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne3.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Web Créatif</h3>
+                        <p class="project-description">Design web créatif</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne4.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne4.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Site Innovant</h3>
+                        <p class="project-description">Innovation web design</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne5.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne5.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Web Premium</h3>
+                        <p class="project-description">Site web premium</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="modrne5.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="modrne5.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Site Tendance</h3>
+                        <p class="project-description">Design web tendance</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne8.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne8.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Web Dynamique</h3>
+                        <p class="project-description">Site web dynamique</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne9.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne9.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Site Professionnel</h3>
+                        <p class="project-description">Design web professionnel</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne10.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne10.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Web Artistique</h3>
+                        <p class="project-description">Site web artistique</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="website">
+                    <div class="project-card-image">
+                        <img src="moderne11.jpg" alt="Website Design" class="project-image">
+                        <div class="project-card-overlay">
+                            <a href="#" class="project-card-link" data-image="moderne11.jpg">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-category">Web Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Site Unique</h3>
+                        <p class="project-description">Design web unique</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal for Image Preview -->
+    <div id="imageModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="Project Preview">
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Home Section -->
     <section class="back-home-section section-fade">
@@ -216,7 +939,8 @@
             <div class="back-home-content">
                 <a href="index.html" class="back-home-btn">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                     Retour à l'accueil
                 </a>
@@ -244,5 +968,5 @@
 
     <script src="portfolio.js"></script>
 </body>
-</html>
 
+</html>

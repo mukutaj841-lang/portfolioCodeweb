@@ -23,10 +23,10 @@
     --text-light: #888;
     --white: #ffffff;
     --border-color: rgba(255, 255, 255, 0.1);
-    
+
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    
+
     /* Spacing */
     --container-padding: 2rem;
     --section-spacing: 6rem;
@@ -271,12 +271,16 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) rotate(0deg);
     }
+
     33% {
         transform: translate(30px, -30px) rotate(120deg);
     }
+
     66% {
         transform: translate(-20px, 20px) rotate(240deg);
     }
@@ -286,6 +290,7 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -443,7 +448,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s;
 }
 
@@ -767,9 +772,12 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
@@ -861,6 +869,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -872,6 +881,7 @@ body {
         opacity: 0;
         transform: translateY(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -883,6 +893,7 @@ body {
         opacity: 0;
         transform: scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -893,9 +904,11 @@ body {
     0% {
         background-position: 0% 0%, 50% 0%, 0% 50%, 100% 100%;
     }
+
     50% {
         background-position: 50% 50%, 0% 50%, 100% 50%, 50% 0%;
     }
+
     100% {
         background-position: 100% 100%, 50% 100%, 0% 0%, 0% 50%;
     }
@@ -905,20 +918,25 @@ body {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 100%;
     }
 }
+
 @keyframes gradientShift {
     0% {
         background-position: 0% 0%, 50% 0%, 0% 50%, 100% 100%;
     }
+
     50% {
         background-position: 50% 50%, 0% 50%, 100% 50%, 50% 0%;
     }
+
     100% {
         background-position: 100% 100%, 50% 100%, 0% 0%, 0% 50%;
     }
@@ -1371,3 +1389,197 @@ body {
     }
 }
 
+/* ============================================
+   PROJECT IMAGES
+   ============================================ */
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+/* ============================================
+   MODAL STYLES
+   ============================================ */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+    animation: modalFadeIn 0.3s ease forwards;
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.modal-content {
+    position: relative;
+    z-index: 1001;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: modalSlideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-primary);
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-family: var(--font-family);
+    line-height: 1;
+    padding: 0;
+    z-index: 1002;
+}
+
+.modal-close:hover {
+    background: var(--accent-gradient);
+    border-color: transparent;
+    color: var(--bg-primary);
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.modal-image-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.8),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(10, 10, 10, 0.3));
+}
+
+.modal-image-container img {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    animation: imageZoomIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Modal Animations */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes imageZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Modal Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95vw;
+        max-height: 85vh;
+    }
+
+    .modal-close {
+        top: -45px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.75rem;
+    }
+
+    .modal-image-container img {
+        max-height: 85vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+    }
+
+    .modal-content {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    .modal-image-container {
+        border-radius: 0;
+    }
+
+    .modal-image-container img {
+        max-height: 100vh;
+        border-radius: 0;
+    }
+}
